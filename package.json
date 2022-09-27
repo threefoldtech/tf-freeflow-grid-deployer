@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "deploy": "ts-node deploy/deploy-freeflow.ts",
-    "delete-gateways": "ts-node delete/delete-gateway.ts",
-    "delete-contracts": "ts-node delete/delete-contract.ts"
+    "deploy": "ts-node deploy/vm.deploy.ts",
+    "delete-gateways": "ts-node delete/gateway.delete.ts",
+    "delete-contracts": "ts-node delete/contract.delete.ts"
   },
-  "main": "deploy/deploy-freeflow.ts",
+  "main": "deploy/vm.deploy.ts",
   "dependencies": {
     "@polkadot/wasm-crypto": "^6.3.1",
     "dotenv": "^16.0.2",
