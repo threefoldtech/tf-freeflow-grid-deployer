@@ -44,6 +44,7 @@ const deployVirtualMachine = async () => {
     disk.mountpoint = DISK_MOUNT_POINT
 
     const machine = new MachineModel();
+    machine.public_ip6 = true;
     machine.name = USER_ID;
     machine.node_id = VM_DEPLOY_NODE_ID;
     machine.disks = [disk];
